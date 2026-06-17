@@ -23,19 +23,29 @@
     }
 
     .logo {
-      max-width: 220px;
+      display: block;
+      width: 220px;
+      max-width: 100%;
+      margin: 0 auto 20px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .buttons a {
+      display: block;
+      width: 220px;
+      max-width: 100%;
+    }
+
+    .buttons img {
+      display: block;
       width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .socials a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .socials a:hover {
-      text-decoration: underline;
+      height: auto;
     }
   </style>
 </head>
@@ -44,12 +54,18 @@
   <div class="container">
     <img src="logo.gif" alt="Your Business Logo" class="logo">
 
-    <h1>Coming Soon</h1>
+    <div class="buttons">
+      <a
+        href="https://instagram.com/ruffduffstuff"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="Button_MyWork.gif" alt="View My Work">
+      </a>
 
-    <p>Follow us for updates:</p>
-
-    <div class="socials">
-      <a href="https://instagram.com/ruffduffstuff">Instagram</a>
+      <a href="mailto:your@email.com">
+        <img src="Button_Contact.gif" alt="Contact Me">
+      </a>
     </div>
   </div>
 </body>
